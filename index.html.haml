@@ -1,0 +1,88 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %title Shulla Cignoir's Site
+    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}
+    %link{:href => "css/custom.css", :rel => "stylesheet"}
+    /[if lt IE 9]
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+  %body
+    %nav.menu.navbar.navbar-default.navbar-static-top
+      .container
+        .navbar-header
+          %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Menu
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        #navbar.navbar-collapse.collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href => ""} Top
+            %li
+              %a{:href => "#works"} Products
+            %li
+              %a{:href => "#contact"} Contact
+    .main
+      .container
+        .row
+          %h1 For Game Developments
+          %p
+            Publishing original 3D character models in Unity Asset Store.
+          %p
+            Hope those will help you develop awesome games!!
+    .works#works
+      .container
+        %h2 Products
+        .table-responsive
+          %table.table
+            %tr
+              %td.col-sm-6
+                %center
+                  %img.img-responsive.center-block{:alt => "levain", :src => "img/levain.png"}
+              %td.col-sm-6
+                %row
+                  %dl
+                    %dt
+                      Levain
+                      %small 3D Lowpoly Character
+                    %dd
+                      %dl
+                        %dt Includes
+                        %dd
+                          %ul
+                            %li Levain (skirt)
+                            %li Levain (skirtless)
+                            %li Levain (skirtless / mecanim)
+                        %dt Vertices
+                        %dd
+                          %ul
+                            %li Character 4246
+                            %li Skirt 196
+                            %li Accessories 507
+                            %li (total: 4949)
+                        %dt Others
+                        %dd
+                          %ul
+                            %li 17 Animations
+                            %li Mecanim support(skirtless only)
+                %row
+                  %a.button.btn.btn-default.btn-lg.col-sm-12{:href => "http://u3d.as/LQk"} View in Asset Store
+    .footer#contact
+      .container
+        .row
+          Copyright (c) 2017 Shulla Cignoir
+        .row
+          .col-sm-6.text-right email
+          .col-sm-6 cignoir@gmail.com
+        .row
+          .col-sm-6.text-right twitter
+          .col-sm-6 https://twitter.com/cignoir
+
+    %script{:src => "js/jquery.min.js"}
+    %script{:src => "js/bootstrap.min.js"}
