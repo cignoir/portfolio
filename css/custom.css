@@ -38,7 +38,7 @@ body	{font-family: sans-serif;}
 
 /* main 背景画像の設定 */
 .main {
-    /*background-image: url(../img/bg_main.png);*/
+    background-image: url(../img/top.png);
     background-position: 35% 50%;
     background-size: cover;
     color: #ddd;
