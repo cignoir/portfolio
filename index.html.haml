@@ -12,22 +12,22 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
   %body
-    %nav.menu.navbar.navbar-default.navbar-static-top
-      .container
-        .navbar-header
-          %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
-            %span.sr-only Menu
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-        #navbar.navbar-collapse.collapse
-          %ul.nav.navbar-nav.navbar-right
-            %li
-              %a{:href => ""} Top
-            %li
-              %a{:href => "#works"} Products
-            %li
-              %a{:href => "#contact"} Contact
+    -#%nav.menu.navbar.navbar-default.navbar-static-top
+    -#  .container
+    -#    .navbar-header
+    -#      %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+    -#        %span.sr-only Menu
+    -#        %span.icon-bar
+    -#        %span.icon-bar
+    -#        %span.icon-bar
+    -#    #navbar.navbar-collapse.collapse
+    -#      %ul.nav.navbar-nav.navbar-right
+    -#        %li
+    -#          %a{:href => ""} Top
+    -#        %li
+    -#          %a{:href => "#works"} Products
+    -#        %li
+    -#          %a{:href => "#contact"} Contact
     .main
       .container
         .row
@@ -39,39 +39,38 @@
     .works#works
       .container
         %h2 Products
-        .table-responsive
-          %table.table
-            %tr
-              %td.col-sm-6
-                %img.img-responsive.center-block{:alt => "levain", :src => "img/levain.png"}
-              %td.col-sm-6
-                %row
+        .row
+          .col-sm-6
+            %img.img-responsive.center-block{:alt => "levain", :src => "img/levain.png"}
+          .col-sm-6
+            .row
+              %dl
+                %dt
+                  Levain
+                  %small 3D Lowpoly Character
+                %dd
                   %dl
-                    %dt
-                      Levain
-                      %small 3D Lowpoly Character
+                    %dt Includes
                     %dd
-                      %dl
-                        %dt Includes
-                        %dd
-                          %ul
-                            %li Levain (skirt)
-                            %li Levain (skirtless)
-                            %li Levain (skirtless / mecanim)
-                        %dt Vertices
-                        %dd
-                          %ul
-                            %li Character 4246
-                            %li Skirt 196
-                            %li Accessories 507
-                            %li (total: 4949)
-                        %dt Others
-                        %dd
-                          %ul
-                            %li 17 Animations
-                            %li Mecanim support(skirtless only)
-                %row
-                  %a.button.btn.btn-default.btn-lg.col-sm-12{:href => "http://u3d.as/LQk"} View in Asset Store
+                      %ul
+                        %li Levain (skirt)
+                        %li Levain (skirtless)
+                        %li Levain (skirtless / mecanim)
+                    %dt Vertices
+                    %dd
+                      %ul
+                        %li Character 4246
+                        %li Skirt 196
+                        %li Accessories 507
+                        %li (total: 4949)
+                    %dt Others
+                    %dd
+                      %ul
+                        %li 17 Animations
+                        %li Mecanim support(skirtless only)
+            .row
+              %a.button.btn.btn-default.btn-lg.col-sm-12{:href => "http://u3d.as/LQk"} View in Asset Store
+    %br
     .footer#contact
       .container
         .row
